@@ -32,7 +32,6 @@ const AboutPage = () => {
                               end:"top 0%",
                               scrub:1
                         }
-
             })
       },[])
   return (
@@ -43,7 +42,7 @@ const AboutPage = () => {
       <div className="aboutme w-full flex flex-col md:flex-row justify-center items-start gap-y-10 " >
             <div className="div w-full md:w-1/2 px-5 min-h-[200px] flex flex-col justify-center items-center sm:items-start gap-y-8">
                  <h1 className='text-5xl line leading-tight font-bold text-center sm:text-left'> <span className='text-cyan-400'>Web Developer</span>, Creative Thinker & Tech enthusiast</h1>
-                 <Link href='https://drive.google.com/file/d/1YeVs6femIWLPwC26G7BI8zVyfPw5CFLU/view?usp=sharing'><button className='download flex justify-center items-center gap-x-2 bg-cyan-500 hover:bg-cyan-600 px-3 py-2 rounded-lg transition-all ease-linear'>Downlaod CV <MdOutlineFileDownload className='text-2xl'/></button></Link>
+                 <Link href='https://drive.google.com/file/d/1342_C9Zk8Y4TCe_YVnPbRODmsi7PbcyV/view?usp=sharing'><button className='download flex justify-center items-center gap-x-2 bg-cyan-500 hover:bg-cyan-600 px-3 py-2 rounded-lg transition-all ease-linear'>Downlaod CV <MdOutlineFileDownload className='text-2xl'/></button></Link>
             </div>
             <div className="brief  w-full md:w-[50%] text-xl p-5 text-center sm:text-left">
                  <p>I’m a passionate web developer specializing in both front-end and back-end technologies. Combining creativity with technical expertise, I craft seamless and engaging digital experiences. With a strong focus on design and problem-solving, I thrive on tackling new challenges and staying at the forefront of web development.</p>

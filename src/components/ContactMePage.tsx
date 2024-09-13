@@ -45,7 +45,7 @@ const ContactMePage = () => {
 
                                     </div>
                               </div>
-                              <div className='w-full sm:w-1/2  h-full flex flex-col justify-center items-center p-5 sm:min-h-[500px] bg-cyan-400'>
+                              <div className='w-full sm:w-1/2  h-full flex flex-col justify-center items-center p-3 md:p-5 sm:min-h-[500px] bg-cyan-400'>
                                     <h1 className='text-2xl text-black font-semibold'>Contact Me</h1>
                                     <form className="flex flex-col gap-3 w-full h-full p-5 gap-y-5">
                                           <input type="text" placeholder="Name" className="w-full p-2 rounded-lg bg-cyan-300 outline-none border border-slate-800 text-black placeholder:text-black" />
