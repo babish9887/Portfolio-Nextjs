@@ -10,16 +10,28 @@
 }
 
 @font-face {
+      font-family: 'Myfont2';
+      src: url('/font-ClzOE_of.ttf') format('ttf');
+      font-style: normal;
+}
+
+@font-face {
+      font-family: 'Myfont3';
+      src: url('/GHM6WVH6MILNYOOCXHXB5GTSGNTMGXZR.woff2') format('woff2');
+      font-style: normal;
+}
+
+
+@font-face {
+      font-family: 'Myfont4';
+      src: url('/KFIAZD4RUMEZIYV6FQ3T3GP5PDBDB6JY.woff2') format('woff2');
+      font-style: normal;
+}
+@font-face {
       font-family: 'Myfont5';
       src: url('/X6XYTKIVDUW7GZTZPZNN4EUM5KH54KHF.woff2') format('woff2');
       font-style: normal;
     }
-    @font-face {
-      font-family: 'Myfont4';
-      src: url('/KFIAZD4RUMEZIYV6FQ3T3GP5PDBDB6JY.woff2') format('woff2');
-      font-style: normal;
-    }
-    
     
 
 :root {
@@ -37,7 +49,7 @@
 html,body {
   color: var(--foreground);
   background: var(--background);
-  font-family:'Myfont', Arial, Helvetica, sans-serif;
+  font-family:'Myfont','Myfon1','Myfont2',"Myfont3","Myfont4","Myfont5", sans-serif;
   overflow-x: hidden;
 }
 body::-webkit-scrollbar{

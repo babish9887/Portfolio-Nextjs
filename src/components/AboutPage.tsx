@@ -15,14 +15,14 @@ const AboutPage = () => {
                   opacity: 1,
                   scrollTrigger: {
                         trigger: "#aboutme",
-                        start: "top 70%",
+                        start: "top 80%",
                         end: "top 50%",
                         scrub: 2
                   }
             })
             tl.fromTo('.brief', {
                   opacity: 0,
-                  y: 200
+                  y: 300
             }, {
                   opacity: 1,
                   y: 0,
@@ -40,7 +40,7 @@ const AboutPage = () => {
                         y: 0,
                         scrollTrigger: {
                               trigger: "#aboutme",
-                              start: "top 70%",
+                              start: "top 80%",
                               end: "top 0%",
                               scrub: 2,
                         }

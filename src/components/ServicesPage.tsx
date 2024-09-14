@@ -88,7 +88,7 @@ const ServicesPage = () => {
                                     </div>
 
                                     <h1 className='text-center text-4xl text-cyan-400 font-semibold'>Web Development</h1>
-                                    <div className="desc text-center">
+                                    <div className="desc text-center text-lg">
                                           <p>Crafting custom websites with a focus on functionality and performance. From building dynamic applications to ensuring seamless integrations, I deliver solutions tailored to your unique needs.</p>
                                     </div>
                               </div>
@@ -101,7 +101,7 @@ const ServicesPage = () => {
                                           </div>
                                     </div>
                                     <h1 className='text-center text-4xl text-black font-semibold'>Website Design</h1>
-                                    <div className="desc text-center text-black">
+                                    <div className="desc text-center text-black  text-lg">
                                           <p>Creating visually stunning and user-friendly designs that captivate your audience. I focus on aesthetics and usability to ensure your website stands out and provides a great user experience.</p>
                                     </div>
                               </div>
@@ -115,7 +115,7 @@ const ServicesPage = () => {
                                           </div>
                                     </div>
                                     <h1 className='text-center text-4xl text-black font-semibold'>Responsive Design</h1>
-                                    <div className="desc text-center text-black">
+                                    <div className="desc text-center text-black  text-lg">
                                           <p>Designing websites that look and perform beautifully on any device. I ensure your site is optimized for desktops, tablets, and smartphones, providing a seamless user experience across all screen sizes.</p>
                                     </div>
                               </div>
@@ -129,7 +129,7 @@ const ServicesPage = () => {
                                           </div>
                                     </div>
                                     <h1 className='text-center text-4xl text-cyan-400 font-semibold'>Website Maintenance</h1>
-                                    <div className="desc text-center">
+                                    <div className="desc text-center  text-lg">
                                           <p>Providing ongoing support to keep your website secure, up-to-date, and running smoothly. From regular updates to troubleshooting issues, I ensure your site remains in top condition.</p>
                                     </div>
                               </div>
