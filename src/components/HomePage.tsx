@@ -10,7 +10,7 @@ const HomePage = () => {
             const tl=gsap.timeline()
 
             tl.fromTo('.hello, .text2, .info p ',{
-                  x:-50,
+                  x:-100,
                   opacity:0,
             },{
                   x:0,
@@ -19,21 +19,21 @@ const HomePage = () => {
                   stagger:0.1,
                   delay:1
             }).fromTo(' .social',{
-                  x:50,
+                  x:100,
                   opacity:0,
                   },{
                         x:0,
                         opacity:1,
                         duration:0.4,
 
-            },'-=0.1')
+            },'-=0')
 
             tl.fromTo('.image',{
                   opacity:0,
                   },{
                         opacity:1,
                         duration:0.4,
-                  },'-=1')
+                  },'-=0.6')
       },[])
 
   return (

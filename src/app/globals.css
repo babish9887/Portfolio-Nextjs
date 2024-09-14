@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+      font-family: 'Myfont';
+      src: url('/7AHDUZ4A7LFLVFUIFSARGIWCRQJHISQP.woff2') format('woff2');
+      font-style: normal;
+}
+
+@font-face {
+      font-family: 'Myfont5';
+      src: url('/X6XYTKIVDUW7GZTZPZNN4EUM5KH54KHF.woff2') format('woff2');
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Myfont4';
+      src: url('/KFIAZD4RUMEZIYV6FQ3T3GP5PDBDB6JY.woff2') format('woff2');
+      font-style: normal;
+    }
+    
+    
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -17,7 +37,7 @@
 html,body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:'Myfont', Arial, Helvetica, sans-serif;
   overflow-x: hidden;
 }
 body::-webkit-scrollbar{
@@ -50,6 +70,7 @@ body::-webkit-scrollbar{
           .btn{
             @apply px-3 py-2 bg-cyan-400/20 backdrop-blur-md text-black left-1/2 top-1/2 absolute -translate-x-1/2 -translate-y-1/2
           }
+
       }
 .item {
       position: relative;

@@ -83,9 +83,9 @@ const PortfolioPage = () => {
 
 
                               <div className={`${portfolioDiv} l1right`}>
-                                    <Image src='/msg.png' width={1000} height={1000} alt='portfolio' className='object-cover h-full' />
+                                    <Image src='/chatGPT.png' width={1000} height={1000} alt='portfolio' className='object-cover h-full' />
                                     <div className='btnDiv '>
-                                          <Link href={'https://messenger-babish9887.vercel.app/'}>
+                                          <Link href={'https://chat-gpt-babish9887.vercel.app/'}>
                                                 <button className={`${buttonStyle}`}>View More<BiLink /></button>
                                           </Link>
                                     </div>
