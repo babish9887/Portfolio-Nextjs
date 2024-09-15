@@ -107,7 +107,7 @@ const Navbar = () => {
                   <div className='z-10 w-full p-6 sm:p-0 flex h-[5rem] shadow-lg bg-black/20 backdrop-blur-md justify-between sm:justify-around items-center fixed top-0'>
                         <div className="logo opacity-0 text-3xl font-bold text-cyan-400 cursor-pointer" onClick={() => scrollTo(0, 0)}>Babish</div>
                         <div className="links  hidden sm:flex  justify-center items-center lg:gap-x-8 gap-x-4 ">
-                              <div className={`item opacity-0 cursor-pointer transition duration-200 ${cs=='home' ? "active": ""}`} onClick={() => scrollTo(0, 0)}>Home</div>
+                              <a href="#"><div className={`item opacity-0 cursor-pointer transition duration-200 ${cs=='home' ? "active": ""}`} onClick={() => scrollTo(0, 0)}>Home</div></a>
                               <a href="#aboutme"> <div className={`item opacity-0 cursor-pointer transition duration-200 ${cs=='aboutme' ? "active": ""}`}>About Me</div></a>
                               <a href="#services"> <div className={`item opacity-0 cursor-pointer transition duration-200 ${cs=='services' ? "active": ""}`}>Services</div></a>
                               <a href="#portfolio"> <div className={`item opacity-0 cursor-pointer transition duration-200 ${cs=='portfolio' ? "active": ""}`}>Portfolio</div></a>
@@ -122,7 +122,7 @@ const Navbar = () => {
                         <div onClick={()=>handleToggle('Close')} className='close p-3 sm:hidden w-14 aspect-square absolute top-0 right-0 m-4  font-bold text-4xl text-white cursor-pointer' ><CgClose /></div>
 
                         <div className="links sm:hidden flex flex-col text-white justify-center items-start gap-4 text-4xl m-6">
-                              <div className={`item cursor-pointer transition duration-200 ${cs=='home' ? "active": ""}`} onClick={() => {scrollTo(0, 0); handleToggle('Close')}}>Home</div>
+                              <a href="#"><div className={`item cursor-pointer transition duration-200 ${cs=='home' ? "active": ""}`} onClick={() => {scrollTo(0, 0); handleToggle('Close')}}>Home</div></a>
                               <a href="#aboutme"> <div className={`item cursor-pointer transition duration-200 ${cs=='aboutme' ? "active": ""}`} onClick={()=>handleToggle('Close')}>About Me</div></a>
                               <a href="#services"> <div className={`item cursor-pointer transition duration-200 ${cs=='services' ? "active": ""}`} onClick={()=>handleToggle('Close')}>Services</div></a>
                               <a href="#portfolio"> <div className={`item cursor-pointer transition duration-200 ${cs=='portfolio' ? "active": ""}`} onClick={()=>handleToggle('Close')}>Portfolio</div></a>
