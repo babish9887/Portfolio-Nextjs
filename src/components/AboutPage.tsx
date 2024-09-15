@@ -48,7 +48,7 @@ const AboutPage = () => {
             })
       }, [])
       return (
-            <div id='aboutme' className=' w-full flex justify-center items-center lg:p-10 p-5 md:p-8'>
+            <div id='aboutme' className='section w-full flex justify-center items-center lg:p-10 p-5 md:p-8'>
 
                   <div className='w-full max-w-[1200px]  flex flex-col justify-center items-center lg:gap-y-20 md:gap-y-12 sm:gap-10   sm:p-10 border-0 border-t border-gray-800 pt-10'>
                         <h1 className='heading opacity-0'>About Me</h1>
@@ -60,7 +60,7 @@ const AboutPage = () => {
                               </div>
                               <div className="brief  w-full md:w-[50%] text-xl p-5 text-center sm:text-left">
 
-                                    <p>I’m a passionate web developer with expertise in both front-end and back-end technologies. I craft seamless and engaging digital experiences, combining creativity with technical skills in <span className='text-cyan-400'>HTML, CSS, and JavaScript</span>. My proficiency extends to the <span className='text-cyan-400'>MERN stack (MongoDB, Express.js, React.js, Node.js), Next.js </span> for optimized performance, and both <span className='text-cyan-400'>MongoDB and SQL</span> for robust data management. I thrive on tackling new challenges and staying at the forefront of web development.</p>
+                                    <p>I'm a passionate web developer with expertise in both front-end and back-end technologies. I craft seamless and engaging digital experiences, combining creativity with technical skills in <span className='text-cyan-400'>HTML, CSS, and JavaScript</span>. My proficiency extends to the <span className='text-cyan-400'>MERN stack (MongoDB, Express.js, React.js, Node.js), Next.js </span> for optimized performance, and both <span className='text-cyan-400'>MongoDB and SQL</span> for robust data management. I thrive on tackling new challenges and staying at the forefront of web development.</p>
                               </div>
                         </div>
                   </div>

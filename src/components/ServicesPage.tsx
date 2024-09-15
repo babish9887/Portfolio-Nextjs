@@ -73,7 +73,7 @@ const ServicesPage = () => {
 
 
       return (
-            <div id='services' className='relative w-full flex h-auto justify-center items-center lg:p-10 sm:p-5 pb-10 '>
+            <div id='services' className='section relative w-full flex h-auto justify-center items-center lg:p-10 sm:p-5 pb-10 '>
                   <div className='p-5  pt-10 w-full max-w-[1200px] flex flex-col justify-center items-center gap-12 lg:gap-y-16 border-0 border-t border-gray-800 '>
                         <h1 className='heading serviceHeading opacity-0'>Services</h1>
 

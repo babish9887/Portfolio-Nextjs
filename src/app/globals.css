@@ -121,7 +121,7 @@ body::-webkit-scrollbar{
       opacity: 0;
   }
   
-  .social::before {
+  /* .social::before {
       content: '';
       position: absolute;
       bottom: 0;
@@ -140,7 +140,38 @@ body::-webkit-scrollbar{
   }
   .social:hover{
       color:black
-  }
+  } */
+
+  .item {
+      position: relative; /* Required for pseudo-element positioning */
+      overflow: hidden;  /* Ensures that the pseudo-element doesn't overflow */
+    }
+    
+    .item::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px; 
+      background-color: white; 
+      transform: scaleX(0); 
+      transform-origin: center; 
+      transition: transform 0.3s ease; 
+      z-index: 0;
+    }
+    
+    .item.active::before {
+      transform-origin:center; 
+
+      transform: scaleX(1); 
+    }
+    
+    .item:hover::before {
+      transform-origin:center; 
+
+      transform: scaleX(1); 
+    }
   
   .social > * {
       position: relative;

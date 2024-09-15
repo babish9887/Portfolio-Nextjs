@@ -67,7 +67,7 @@ const PortfolioPage = () => {
       },[])
 
       return (
-            <div id='portfolio' className='w-full flex justify-center items-center sm:p-10 md:p-5 lg:p-10 mb-10' >
+            <div id='portfolio' className='section w-full flex justify-center items-center sm:p-10 md:p-5 lg:p-10 mb-10' >
                   <div className='pfs p-5 pt-10  md:pt-10 md:p-0 lg:p-5 w-full h-auto max-w-[1200px] gap-y-10 flex flex-col justify-center items-center border-0 border-t border-gray-800 '>
 
                         <h1 className='heading'>Portfolio</h1>

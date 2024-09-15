@@ -37,7 +37,7 @@ const HomePage = () => {
       },[])
 
   return (
-    <div id='home' className='  flex flex-col justify-center items-center p-4 sm:p-10 sm:pb-5 pb-4 gap-y-5 mt-[80px] '>
+    <div id='home' className='section  flex flex-col justify-center items-center p-4 sm:p-10 sm:pb-5 pb-4 gap-y-5 mt-[80px] '>
             <div data-scroll data-scroll-speed={0.2} className="z-0  image opacity-0 h-[18rem] sm:h-[21rem] lg:h-[23rem] xl:h-[24rem] aspect-square rounded-full overflow-hidden">
                   <Image  src='/pp.jpg' width={400} height={400} alt='pp' className='w-full aspect-square object-cover transform scale-[1.3]' />
             </div>
