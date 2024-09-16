@@ -121,7 +121,7 @@ body::-webkit-scrollbar{
       opacity: 0;
   }
   
-  /* .social::before {
+  .social::before {
       content: '';
       position: absolute;
       bottom: 0;
@@ -129,7 +129,7 @@ body::-webkit-scrollbar{
       width: 100%;
       height: 100%;
       background-color: cyan;
-      transform: translateY(100%);
+      transform: translateY(105%);
       transition: transform 0.3s ease;
       z-index: 0;
 
@@ -140,7 +140,9 @@ body::-webkit-scrollbar{
   }
   .social:hover{
       color:black
-  } */
+  }
+
+ 
 
   .item {
       position: relative; /* Required for pseudo-element positioning */

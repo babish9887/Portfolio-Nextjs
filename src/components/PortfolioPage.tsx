@@ -9,62 +9,81 @@ const buttonStyle = 'btn text-lg flex gap-1 justify-center items-center'
 const PortfolioPage = () => {
 
       gsap.registerPlugin(ScrollTrigger)
-      useEffect(()=>{
+      useEffect(() => {
 
-            var tl2=gsap.timeline({
-                  scrollTrigger:{
-                        trigger:".pfs",
-                        scroller:'body',
-                        start:"top 60%",
-                        end:'top -40%',
-                        scrub:2,
+            var tl2 = gsap.timeline({
+                  scrollTrigger: {
+                        trigger: ".pfs",
+                        scroller: 'body',
+                        start: "top 60%",
+                        end: 'top -60%',
+                        scrub: 2,
                   }
             })
-            
-            tl2.fromTo('.l1left',{
-                  y:100,
-                  opacity:0,
-                  duration:1,
-            },{
-                  opacity:1,
-                  y:0,
-            })
-            
-            tl2.fromTo('.l1right',{
-                  y:100,
-                  opacity:0,
-                  duration:1,
-            },{
-                  opacity:1,
-                  y:0,
-            })
 
-            tl2.fromTo('.l2left',{
-                  y:100,
-                  opacity:0,
-                  duration:1,
-            },{
-                  opacity:1,
-                  y:0,
-            })
+            // tl2.fromTo('.l1left', {
+            //       y: 100,
+            //       opacity: 0,
+            //       duration: 1,
+            // }, {
+            //       opacity: 1,
+            //       y: 0,
+            // })
 
-            tl2.fromTo('.l2right',{
-                  y:100,
-                  opacity:0,
-                  duration:1,
-            },{
-                  opacity:1,
-                  y:0,
+            // tl2.fromTo('.l1right', {
+            //       y: 100,
+            //       opacity: 0,
+            //       duration: 1,
+            // }, {
+            //       opacity: 1,
+            //       y: 0,
+            // })
+
+            // tl2.fromTo('.l2left', {
+            //       y: 100,
+            //       opacity: 0,
+            //       duration: 1,
+            // }, {
+            //       opacity: 1,
+            //       y: 0,
+            // })
+
+            // tl2.fromTo('.l2right', {
+            //       y: 100,
+            //       opacity: 0,
+            //       duration: 1,
+            // }, {
+            //       opacity: 1,
+            //       y: 0,
+            // })
+            // tl2.fromTo('.l3left', {
+            //       y: 100,
+            //       opacity: 0,
+            //       duration: 1,
+            // }, {
+            //       opacity: 1,
+            //       y: 0,
+            // })
+            // tl2.fromTo('.l3right', {
+            //       y: 100,
+            //       opacity: 0,
+            //       duration: 1,
+            // }, {
+            //       opacity: 1,
+            //       y: 0,
+            // })
+
+
+            tl2.fromTo('.l1left, .l1right, .l2left, .l2right, .l3left, .l3right', {
+                  y: 100,
+                  opacity: 0,
+                  duration: 2,
+            }, {
+                  opacity: 1,
+                  y: 0,
+                  stagger:0.5
             })
-            tl2.fromTo('.l3left',{
-                  y:100,
-                  opacity:0,
-                  duration:1,
-            },{
-                  opacity:1,
-                  y:0,
-            })
-      },[])
+      }, [])
 
       return (
             <div id='portfolio' className='section w-full flex justify-center items-center sm:p-10 md:p-5 lg:p-10 mb-10' >
@@ -91,8 +110,21 @@ const PortfolioPage = () => {
                                     </div>
                               </div>
 
-
                               <div className={`${portfolioDiv} l2left`}>
+
+                                    <Image src='/spotify-clone.png' width={1000} height={1000} alt='portfolio' className='object-cover h-full' />
+
+
+                                    <div className='btnDiv '>
+                                          <Link href={'https://spotify-clone-babish9887.vercel.app/'}>
+                                                <button className={`${buttonStyle}`}>View More<BiLink /></button>
+                                          </Link>
+                                    </div>
+
+                              </div>
+
+
+                              <div className={`${portfolioDiv} l2right`}>
                                     <Image src='/thewilsoasis.png' width={1000} height={1000} alt='portfolio' className='object-cover h-full' />
                                     <div className='btnDiv '>
                                           <Link href={'https://the-wild-oasis-babish9887.vercel.app/'}>
@@ -103,7 +135,7 @@ const PortfolioPage = () => {
                               </div>
 
 
-                              <div className={`${portfolioDiv} l2right`}>
+                              <div className={`${portfolioDiv} l3left`}>
 
                                     <Image src='/digitaloasis.png' width={1000} height={1000} alt='portfolio' className='object-cover h-full' />
 
@@ -116,7 +148,7 @@ const PortfolioPage = () => {
 
                               </div>
 
-                              <div className={`${portfolioDiv} l3left`}>
+                              <div className={`${portfolioDiv} l3right`}>
 
                                     <Image src='/reactpizza.png' width={1000} height={1000} alt='portfolio' className='object-cover h-full' />
 
@@ -128,6 +160,8 @@ const PortfolioPage = () => {
                                     </div>
 
                               </div>
+
+
                         </div>
 
                   </div>
