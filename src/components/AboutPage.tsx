@@ -98,7 +98,7 @@ const AnimatedText = ({ text }:{text:string}) => {
       }, []);
     
       return (
-        <div ref={textRef} className='text-5xl line leading-tight font-bold text-center sm:text-left'>
+        <div ref={textRef} className='tracking-wider text-5xl line leading-tight font-bold text-center sm:text-left'>
           {text.split(' ').map((word, index) => (
             <span key={index} className={`word inline-block mx-1 ${word=='Web' || word=="Developer,"?"text-cyan-400":"text-white"}`}>
               {word}

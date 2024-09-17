@@ -42,7 +42,7 @@ const HomePage = () => {
   return (
     <div id='home' className='section  flex flex-col justify-center items-center p-4 sm:p-10 sm:pb-5 pb-4 gap-y-5 mt-[80px] '>
             <div data-scroll data-scroll-speed={0.2} className="z-0  image opacity-0 h-[18rem] sm:h-[21rem] lg:h-[23rem] xl:h-[24rem] aspect-square rounded-full overflow-hidden">
-                  <Image  src='/pp.jpg' width={400} height={400} alt='pp' className='w-full aspect-square object-cover transform scale-[1.3]' />
+                  <Image  src='/pp.jpg' width={400} height={400} alt='pp' className='w-full aspect-square object-cover transform scale-[1.3] -translate-x-1' />
             </div>
             <div className="info  flex justify-center flex-col items-center gap-y-3">
                   <p  className='hello opacity-0 text-lg p-0 m-0  md:text-xl text-cyan-400'>Hello</p>
@@ -54,7 +54,6 @@ const HomePage = () => {
                         <Link href={'https://github.com/babish9887'}><div className="social"><FiGithub /></div></Link>
                         <Link href={'https://www.linkedin.com/in/babish-chaudhary-a19369274/'}><div className="social"><FaLinkedinIn/></div></Link>
                   </div>
-
             </div>
     </div>
   )

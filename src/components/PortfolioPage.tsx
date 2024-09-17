@@ -21,68 +21,68 @@ const PortfolioPage = () => {
                   }
             })
 
-            // tl2.fromTo('.l1left', {
-            //       y: 100,
-            //       opacity: 0,
-            //       duration: 1,
-            // }, {
-            //       opacity: 1,
-            //       y: 0,
-            // })
-
-            // tl2.fromTo('.l1right', {
-            //       y: 100,
-            //       opacity: 0,
-            //       duration: 1,
-            // }, {
-            //       opacity: 1,
-            //       y: 0,
-            // })
-
-            // tl2.fromTo('.l2left', {
-            //       y: 100,
-            //       opacity: 0,
-            //       duration: 1,
-            // }, {
-            //       opacity: 1,
-            //       y: 0,
-            // })
-
-            // tl2.fromTo('.l2right', {
-            //       y: 100,
-            //       opacity: 0,
-            //       duration: 1,
-            // }, {
-            //       opacity: 1,
-            //       y: 0,
-            // })
-            // tl2.fromTo('.l3left', {
-            //       y: 100,
-            //       opacity: 0,
-            //       duration: 1,
-            // }, {
-            //       opacity: 1,
-            //       y: 0,
-            // })
-            // tl2.fromTo('.l3right', {
-            //       y: 100,
-            //       opacity: 0,
-            //       duration: 1,
-            // }, {
-            //       opacity: 1,
-            //       y: 0,
-            // })
-
-
-            tl2.fromTo('.l1left, .l1right, .l2left, .l2right, .l3left, .l3right', {
+            tl2.fromTo('.l1left', {
                   y: 100,
                   opacity: 0,
-                  duration: 2,
+                  duration: 1,
             }, {
                   opacity: 1,
                   y: 0,
-                  stagger:0.5
             })
+
+            tl2.fromTo('.l1right', {
+                  y: 100,
+                  opacity: 0,
+                  duration: 1,
+            }, {
+                  opacity: 1,
+                  y: 0,
+            },"-=0.3")
+
+            tl2.fromTo('.l2left', {
+                  y: 100,
+                  opacity: 0,
+                  duration: 1,
+            }, {
+                  opacity: 1,
+                  y: 0,
+            })
+
+            tl2.fromTo('.l2right', {
+                  y: 100,
+                  opacity: 0,
+                  duration: 1,
+            }, {
+                  opacity: 1,
+                  y: 0,
+            },"-=0.3")
+            tl2.fromTo('.l3left', {
+                  y: 100,
+                  opacity: 0,
+                  duration: 1,
+            }, {
+                  opacity: 1,
+                  y: 0,
+            })
+            tl2.fromTo('.l3right', {
+                  y: 100,
+                  opacity: 0,
+                  duration: 1,
+            }, {
+                  opacity: 1,
+                  y: 0,
+            },"-=0.3")
+
+
+            // tl2.fromTo('.l1left, .l1right, .l2left, .l2right, .l3left, .l3right', {
+            //       y: 100,
+            //       opacity: 0,
+            //       duration: 2,
+            // }, {
+            //       opacity: 1,
+            //       y: 0,
+            //       stagger:0.5
+            // })
       }, [])
 
       return (

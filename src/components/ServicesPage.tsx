@@ -19,8 +19,8 @@ const ServicesPage = () => {
                   scrollTrigger:{
                         trigger:".services",
                         scroller:'body',
-                        start:"top 60%",
-                        end:'top -10%',
+                        start:"top 80%",
+                        end:'top -20%',
                         scrub:2,
                   }
             })
@@ -46,7 +46,7 @@ const ServicesPage = () => {
                   opacity:1,
                   x:0,
                   rotate:0,
-            })
+            },('-=0.3'))
             
             tl2.fromTo('.line2-left',{
                   x:-300,
@@ -68,7 +68,7 @@ const ServicesPage = () => {
                   opacity:1,
                   x:0,
                   rotate:0,
-            })
+            },('-=0.3'))
       },[])
 
 

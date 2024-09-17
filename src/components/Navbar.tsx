@@ -11,7 +11,7 @@ const Navbar = () => {
       useEffect(() => {
             const tl = gsap.timeline()
 
-            tl.fromTo('.logo, .links .item, .toggle', {
+            tl.fromTo('.nav .logo,.links .item, .toggle', {
                   y: -50,
                   opacity: 0,
             }, {
@@ -19,6 +19,7 @@ const Navbar = () => {
                   opacity: 1,
                   duration: 0.4,
                   stagger: 0.1,
+                  ease:"power3.out"
             })
       }, [])
       let tl2:any=null; 
@@ -31,7 +32,6 @@ const Navbar = () => {
                   tl2=gsap.timeline({paused:true})
                         tl2.fromTo(".respnav", {
                               x: 400,
-                              ease:'power4.out'
                           }, {
                               x: 0,
                               duration: 0.5,
@@ -104,7 +104,7 @@ const Navbar = () => {
           }, []); 
       return (
             <>
-                  <div className='z-10 w-full p-6 sm:p-0 flex h-[5rem] shadow-lg bg-black/20 backdrop-blur-md justify-between sm:justify-around items-center fixed top-0'>
+                  <div className='nav z-10 w-full p-6 sm:p-0 flex h-[5rem] shadow-lg bg-black/20 backdrop-blur-md justify-between sm:justify-around items-center fixed top-0'>
                         <a href="#"><div className="logo opacity-0 text-3xl font-bold text-cyan-400 cursor-pointer" onClick={() => scrollTo(0, 0)}>Babish</div></a>
                         <div className="links  hidden sm:flex  justify-center items-center lg:gap-x-8 gap-x-4 ">
                               <a href="#"><div className={`item opacity-0 cursor-pointer transition duration-200 ${cs=='home' ? "active": ""}`} onClick={() => scrollTo(0, 0)}>Home</div></a>
