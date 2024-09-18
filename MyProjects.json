@@ -3,37 +3,49 @@
           "name": "Tourease",
           "githubUrl": "https://github.com/babish9887/Tour-Ease-Nextjs",
           "hostingUrl": "https://tourease-babish9887.vercel.app/",
-          "imageUrl": "/tourease.png"
+          "imageUrl": "/tourease.png",
+          "position": "l1left",
+          "description": "A Next.js application for planning and organizing tours."
       },
       {
           "name": "ChatGPT",
           "githubUrl": "https://github.com/babish9887/ChatGPT-Clone",
           "hostingUrl": "https://chat-gpt-babish9887.vercel.app/",
-          "imageUrl": "/chatGPT.png"
+          "imageUrl": "/chatGPT.png",
+          "position": "l1right",
+          "description": "A Next.js clone of ChatGPT for conversational AI."
       },
       {
           "name": "Spotify Clone",
           "githubUrl": "",
           "hostingUrl": "https://spotify-clone-babish9887.vercel.app/",
-          "imageUrl": "/spotify-clone.png"
+          "imageUrl": "/spotify-clone.png",
+          "position": "l2left",
+          "description": "A Next.js application mimicking Spotify's music streaming features."
       },
       {
           "name": "The Wild Oasis",
           "githubUrl": "https://github.com/babish9887/the-wild-oasis",
           "hostingUrl": "https://the-wild-oasis-babish9887.vercel.app/",
-          "imageUrl": "/thewilsoasis.png"
+          "imageUrl": "/thewilsoasis.png",
+          "position": "l2right",
+          "description": "A React-based application for exploring wild nature adventures."
       },
       {
           "name": "Digital Oasis",
           "githubUrl": "https://github.com/babish9887/e-commerce-v3",
           "hostingUrl": "https://ecommerce-babish9887.vercel.app/",
-          "imageUrl": "/digitaloasis.png"
+          "imageUrl": "/digitaloasis.png",
+          "position": "l3left",
+          "description": "A Next.js e-commerce platform for buying digital products."
       },
       {
           "name": "React Pizza",
           "githubUrl": "https://github.com/babish9887/react-pizza-app",
           "hostingUrl": "https://babish9887-react-pizza.netlify.app/",
-          "imageUrl": "/reactpizza.png"
+          "imageUrl": "/reactpizza.png",
+          "position": "l3right",
+          "description": "A React application for customizing and ordering pizzas."
       }
   ]
   

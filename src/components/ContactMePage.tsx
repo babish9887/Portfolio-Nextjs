@@ -25,7 +25,7 @@ const ContactMePage = () => {
       },[])
 
       return (
-            <div id='contactme' className='section relative w-full h-full flex justify-center items-center p-4 sm:p-10 md:p-5 lg:p-10'>
+            <div id='contactme' className='section relative w-full h-full flex justify-center items-center p-4 sm:p-10 md:p-5 lg:p-10 mb-10'>
                   <div className='relative p-5 pt-10 md:pt-10 md:p-0 lg:p-5 w-full h-auto max-w-[1200px] gap-y-10 flex flex-col justify-center items-center border-0 border-t border-gray-800'>
                         <h1 className='heading'>Contact Me</h1>
                         <div className="contactForm flex justify-center items-center relative h-full flex-col sm:flex-row min-h-[500px] w-full max-w-[1000px] bg-slate-800 rounded-md overflow-hidden ">

@@ -80,7 +80,7 @@ body::-webkit-scrollbar{
           }
 
           .btn{
-            @apply p-3 rounded-full border border-slate-200 hover:bg-white/20 transition-all  backdrop-blur-md left-1/2 top-1/2 text-5xl text-white font-light
+            @apply lg:p-3 p-2 text-4xl lg:text-5xl  rounded-full border border-slate-200 hover:bg-white/20 transition-all  backdrop-blur-md left-1/2 top-1/2 text-white font-light
           }
 
       }
