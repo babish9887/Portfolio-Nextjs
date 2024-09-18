@@ -1,11 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect } from 'react'
-import { BiLink } from 'react-icons/bi'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
+import MyProjects from '../../MyProjects.json'
+import { HiOutlineCode, HiOutlineEye } from 'react-icons/hi'
 const portfolioDiv = 'service relative overflow-hidden rounded-md aspect-[16/9] flex flex-col group p-0'
-const buttonStyle = 'btn text-lg flex gap-1 justify-center items-center'
+const buttonStyle = 'btn'
 const PortfolioPage = () => {
 
       gsap.registerPlugin(ScrollTrigger)
@@ -91,77 +92,21 @@ const PortfolioPage = () => {
 
                         <h1 className='heading'>Portfolio</h1>
                         <div className='w-full grid grid-cols-1 md:w-auto md:grid-cols-2 lg:grid-cols-2 gap-10 lg:gap-16 '>
-                              <div className={`${portfolioDiv} l1left`}>
-                                    <Image src='/tourease.png' width={1000} height={1000} alt='portfolio' className='object-cover  w-full' />
+                              {MyProjects.map(project=>(
+                                    <div className={`${portfolioDiv} l1left`}>
+                                    <Image src={project.imageUrl} width={1000} height={1000} alt='portfolio' className='object-cover  w-full' />
                                     <div className='btnDiv '>
-                                          <Link href={'https://tourease-babish9887.vercel.app/'}>
-                                                <button className={`${buttonStyle}`}>View More<BiLink /></button>
+                                          <Link href={project.githubUrl}>
+                                                <button className={`${buttonStyle}`}><HiOutlineCode /></button>
                                           </Link>
+
+                                          <Link href={project.hostingUrl}>
+                                                <button className={`${buttonStyle}`}><HiOutlineEye /></button>
+                                          </Link>
+
                                     </div>
                               </div>
-
-
-                              <div className={`${portfolioDiv} l1right`}>
-                                    <Image src='/chatGPT.png' width={1000} height={1000} alt='portfolio' className='object-cover h-full' />
-                                    <div className='btnDiv '>
-                                          <Link href={'https://chat-gpt-babish9887.vercel.app/'}>
-                                                <button className={`${buttonStyle}`}>View More<BiLink /></button>
-                                          </Link>
-                                    </div>
-                              </div>
-
-                              <div className={`${portfolioDiv} l2left`}>
-
-                                    <Image src='/spotify-clone.png' width={1000} height={1000} alt='portfolio' className='object-cover h-full' />
-
-
-                                    <div className='btnDiv '>
-                                          <Link href={'https://spotify-clone-babish9887.vercel.app/'}>
-                                                <button className={`${buttonStyle}`}>View More<BiLink /></button>
-                                          </Link>
-                                    </div>
-
-                              </div>
-
-
-                              <div className={`${portfolioDiv} l2right`}>
-                                    <Image src='/thewilsoasis.png' width={1000} height={1000} alt='portfolio' className='object-cover h-full' />
-                                    <div className='btnDiv '>
-                                          <Link href={'https://the-wild-oasis-babish9887.vercel.app/'}>
-                                                <button className={`${buttonStyle}`}>View More<BiLink /></button>
-                                          </Link>
-                                    </div>
-
-                              </div>
-
-
-                              <div className={`${portfolioDiv} l3left`}>
-
-                                    <Image src='/digitaloasis.png' width={1000} height={1000} alt='portfolio' className='object-cover h-full' />
-
-
-                                    <div className='btnDiv '>
-                                          <Link href={'https://ecommerce-babish9887.vercel.app/'}>
-                                                <button className={`${buttonStyle}`}>View More<BiLink /></button>
-                                          </Link>
-                                    </div>
-
-                              </div>
-
-                              <div className={`${portfolioDiv} l3right`}>
-
-                                    <Image src='/reactpizza.png' width={1000} height={1000} alt='portfolio' className='object-cover h-full' />
-
-
-                                    <div className='btnDiv '>
-                                          <Link href={'https://babish9887-react-pizza.netlify.app/'}>
-                                                <button className={`${buttonStyle}`}>View More<BiLink /></button>
-                                          </Link>
-                                    </div>
-
-                              </div>
-
-
+                              ))}
                         </div>
 
                   </div>

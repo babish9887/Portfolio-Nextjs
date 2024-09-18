@@ -1,0 +1,39 @@
+[
+      {
+          "name": "Tourease",
+          "githubUrl": "https://github.com/babish9887/Tour-Ease-Nextjs",
+          "hostingUrl": "https://tourease-babish9887.vercel.app/",
+          "imageUrl": "/tourease.png"
+      },
+      {
+          "name": "ChatGPT",
+          "githubUrl": "https://github.com/babish9887/ChatGPT-Clone",
+          "hostingUrl": "https://chat-gpt-babish9887.vercel.app/",
+          "imageUrl": "/chatGPT.png"
+      },
+      {
+          "name": "Spotify Clone",
+          "githubUrl": "",
+          "hostingUrl": "https://spotify-clone-babish9887.vercel.app/",
+          "imageUrl": "/spotify-clone.png"
+      },
+      {
+          "name": "The Wild Oasis",
+          "githubUrl": "https://github.com/babish9887/the-wild-oasis",
+          "hostingUrl": "https://the-wild-oasis-babish9887.vercel.app/",
+          "imageUrl": "/thewilsoasis.png"
+      },
+      {
+          "name": "Digital Oasis",
+          "githubUrl": "https://github.com/babish9887/e-commerce-v3",
+          "hostingUrl": "https://ecommerce-babish9887.vercel.app/",
+          "imageUrl": "/digitaloasis.png"
+      },
+      {
+          "name": "React Pizza",
+          "githubUrl": "https://github.com/babish9887/react-pizza-app",
+          "hostingUrl": "https://babish9887-react-pizza.netlify.app/",
+          "imageUrl": "/reactpizza.png"
+      }
+  ]
+  
