@@ -4,12 +4,10 @@ import React, { useEffect } from 'react'
 import { FaFacebook, FaFacebookF, FaLinkedinIn } from 'react-icons/fa'
 import { FiGithub } from 'react-icons/fi'
 import gsap from 'gsap'
-import { SplitText } from 'gsap-trial/SplitText'
 const HomePage = () => {
 
       useEffect(() => {
             const tl = gsap.timeline()
-            gsap.registerPlugin(SplitText)
             tl.fromTo('.hello, .text2, .info p ', {
                   x: -100,
                   opacity: 0,
