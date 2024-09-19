@@ -93,7 +93,7 @@ const PortfolioPage = () => {
                         <h1 className='heading'>Portfolio</h1>
                         <div className='w-full grid grid-cols-1 md:w-auto md:grid-cols-2 lg:grid-cols-2 gap-x-8 gap-y-6  lg:gap-x-16 lg:gap-y-8 '>
                               {MyProjects.map(project=>(
-                                    <div className={`${project.position} card aspect-[16/13] rounded-xl overflow-hidden`}>
+                                    <div key={project.name} className={`${project.position} card aspect-[16/13] rounded-xl overflow-hidden`}>
                                     <div className={`${portfolioDiv}`}>
                                     <Image src={project.imageUrl} width={1000} height={1000} alt='portfolio' className='object-cover  w-full' />
                                     <div className='btnDiv '>
