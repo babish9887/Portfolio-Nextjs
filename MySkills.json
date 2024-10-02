@@ -1,0 +1,22 @@
+[
+      {
+            "name":"HTML, CSS and JS",
+            "skill_value":90
+      },
+      {
+            "name":"MERN Stack",
+            "skill_value":85
+      },
+      {
+            "name":"Next.JS",
+            "skill_value":70
+      },
+      {
+            "name":"Java",
+            "skill_value":60
+      },
+      {
+            "name":"MySQL",
+            "skill_value":80
+      }
+]

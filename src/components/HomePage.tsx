@@ -43,7 +43,7 @@ const HomePage = () => {
       return (
             <div id='home' className='section  flex flex-col justify-center items-center p-4 sm:p-10 sm:pb-5 pb-4 gap-y-5 mt-[80px] '>
                   <div data-scroll data-scroll-speed={0.2} className="z-0  image opacity-0 h-[18rem] sm:h-[21rem] lg:h-[23rem] xl:h-[24rem] aspect-square rounded-full overflow-hidden">
-                        <Image src='/pp2.jpg' width={400} height={400} alt='pp' className='w-full aspect-square object-cover transform filter brightness-[90%] scale-[1.2] rotate-2 -translate-x-1' />
+                        <Image src='/pp2.jpg' width={400} height={400} alt='pp' className='w-full aspect-square object-cover transform filter brightness-[80%] scale-[1.2] rotate-2 -translate-x-1' />
                   </div>
                   <div className="info  flex justify-center flex-col items-center gap-y-3 cursor-default">
                         <p className='hello opacity-0 text-lg p-0 m-0  md:text-xl text-cyan-400 '>Hello</p>

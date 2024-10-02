@@ -1,13 +1,19 @@
 'use client'
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { FaDownload } from 'react-icons/fa'
 import { MdOutlineFileDownload } from 'react-icons/md'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 import Link from 'next/link'
+import { IoIosArrowDown } from 'react-icons/io'
+import MySkills from '../../MySkills.json'
 const AboutPage = () => {
+
+      const skillvalues=MySkills.map(skill=>skill.skill_value)
+      const[skillDropDown, setskillDropDown]=useState(false)
       gsap.registerPlugin(ScrollTrigger)
       useEffect(() => {
+
             const tl = gsap.timeline()
             tl.fromTo('.heading', {
                   opacity: 0,
@@ -47,8 +53,49 @@ const AboutPage = () => {
 
             })
       }, [])
-      return (
-            <div id='aboutme' className='section w-full flex justify-center items-center lg:p-10 p-5 md:p-8'>
+      const handleClick=()=>{
+            setskillDropDown(!skillDropDown)
+            const tl=gsap.timeline({paused:true})
+           if(!skillDropDown){
+            tl.fromTo('.skill',{
+                  opacity:0,
+                  height:0 ,
+            },{
+                  opacity:1,
+                  height:'auto',
+                  duration:0.3,
+                  stagger:0.02,
+                  ease:"power3.out"
+            })
+            document.querySelectorAll('.bar_value').forEach((element, index) => {
+                  gsap.fromTo(
+                      element,
+                      {
+                          opacity: 0,
+                          width: 0
+                      },
+                      {
+                          opacity: 1,
+                          width: `${skillvalues[index]}%`, // Use the corresponding width
+                          duration: 0.8,
+                          delay: 0.5 , // Delay for each element
+                          ease: 'back.out',
+                      }
+                  );
+              });
+      }
+           else{
+            tl.to('.skill', {
+                  opacity: 0,
+                  height: 0,
+                  duration: 0.3,
+              });
+          }
+
+          tl.play()
+      }
+            return (
+            <div id='aboutme' className='section w-full flex justify-center items-center lg:p-10 p-5 md:p-8 md:pb-5'>
 
                   <div className='w-full max-w-[1200px]  flex flex-col justify-center items-center lg:gap-y-20 md:gap-y-12 sm:gap-10   sm:p-10 border-0 border-t border-gray-800 pt-10'>
                         <h1 className='heading opacity-0'>About Me</h1>
@@ -61,8 +108,15 @@ const AboutPage = () => {
                               <div className="brief  w-full md:w-[50%] text-xl p-5 text-center sm:text-left">
 
                                     <p>I'm a passionate web developer with expertise in both front-end and back-end technologies. I craft seamless and engaging digital experiences, combining creativity with technical skills in <span className='text-cyan-400'>HTML, CSS, and JavaScript</span>. My proficiency extends to the <span className='text-cyan-400'>MERN stack (MongoDB, Express.js, React.js, Node.js), Next.js </span> for optimized performance, and both <span className='text-cyan-400'>MongoDB and SQL</span> for robust data management. I thrive on tackling new challenges and staying at the forefront of web development.</p>
+                                    <button className='mt-4 flex justify-center items-center gap-x-5' onClick={handleClick}>Skills <IoIosArrowDown className={`transition duration-200 ${skillDropDown ? "transform rotate-180":""}`} /></button>
+                                         { MySkills.map((skill)=>(
+                                          <div key={skill.name} id='skill' className='skill flex flex-col my-2 h-0 opacity-0'>
+                                                <p className='text-sm mb-[5px]'>{skill.name}</p>
+                                                <span className="bar w-[200px] h-[10px] rounded-md bg-slate-700 overflow-hidden"><span className={`bar_value h-full float-left bg-gradient-to-r from-cyan-500 to-blue-500`}></span></span>
+                                          </div>
+                                         ))} 
                               </div>
-                        </div>
+                        </div>      
                   </div>
             </div>
       )
