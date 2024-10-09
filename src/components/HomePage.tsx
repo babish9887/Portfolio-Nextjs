@@ -36,7 +36,7 @@ const HomePage = () => {
                   opacity: 1,
                   duration: 0.4,
             }, '-=1.5')
-            const titles = gsap.utils.toArray('.titles');
+            const titles = gsap.utils.toArray<HTMLElement>('.titles');
             const tl2=gsap.timeline({repeat:-1, delay:1})
             titles.forEach(title=>{
                   tl2.fromTo(title,{
