@@ -36,8 +36,19 @@ const HomePage = () => {
                   opacity: 1,
                   duration: 0.4,
             }, '-=1.5')
-
-
+            const titles = gsap.utils.toArray('.titles');
+            const tl2=gsap.timeline({repeat:-1, delay:1})
+            titles.forEach(title=>{
+                  tl2.fromTo(title,{
+                        opacity:0,
+                  },{
+                        opacity:1,
+                        duration:1
+                  },).to(title,{
+                        opacity:0,
+                        duration:0.8
+                  },"+=1.5")
+            })
       }, [])
 
       return (
@@ -48,7 +59,11 @@ const HomePage = () => {
                   <div className="info  flex justify-center flex-col items-center gap-y-3 cursor-default">
                         <p className='hello opacity-0 text-lg p-0 m-0  md:text-xl text-cyan-400 '>Hello</p>
                         <h1 className='text2 flex gap-4 md:gap-6 opacity-0 text-[4rem] md:text-[5rem] font-bold m-0 p-0 text-center pt-0 '>I'm <span className='flex flex-col overflow-hidden'>
-                              <span className='text-cyan-400 namespan overflow-hidden'> Babish</span>
+                              <span className='text-cyan-400 namespan overflow-hidden '>
+                                    <div className='titles opacity-1'>Babish</div>
+                                    <div className='titles absolute top-0  opacity-1'>Designer</div>
+                                    <div className='titles absolute top-0 opacity-1'>Developer</div>
+                              </span>
                         </span></h1>
                         <p className='text-center opacity-0 w-full max-w-[850px] text-xl'>I'm a passionate <span className='text-cyan-400'>web developer</span> from Nepal, skilled in both front-end and back-end technologies, dedicated to crafting seamless and dynamic digital experiences that reflect my commitment to innovation and excellence.</p>
                         <p className='opacity-0'>Here's a bit more <span className='text-cyan-400 text-lg'>about me</span></p>
