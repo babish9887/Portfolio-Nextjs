@@ -17,7 +17,7 @@
       },
       {
           "name": "Spotify Clone",
-          "githubUrl": "",
+          "githubUrl": "https://github.com/babish9887/Spotify-clone",
           "hostingUrl": "https://spotify-clone-babish9887.vercel.app/",
           "imageUrl": "/spotify-clone.png",
           "position": "l2left",

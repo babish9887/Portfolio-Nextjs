@@ -38,12 +38,12 @@ const ContactMePage = () => {
                                     <div className='gap-x-2 bg-transparent flex justify-center items-center'>
 
 
-                                          <Link href={'https://facebook.com/babish9887'}><div className="social opacity-1"><FaFacebook /></div></Link>
-                                          <Link href={'https://github.com/babish9887'}><div className="social"><FaGithub /></div></Link>
-                                          <Link href={'https://www.instagram.com/babish9899/'}>
+                                          <Link href={'https://facebook.com/babish9887'} target="_blank" rel="noopener noreferrer"><div className="social opacity-1"><FaFacebook /></div></Link>
+                                          <Link href={'https://github.com/babish9887'} target="_blank" rel="noopener noreferrer"><div className="social"><FaGithub /></div></Link>
+                                          <Link href={'https://www.instagram.com/babish9899/'} target="_blank" rel="noopener noreferrer">
                                                 <div className='social'><FaInstagram /></div>
                                           </Link>
-                                          <Link href={'https://www.linkedin.com/in/babish-chaudhary-a19369274/'}><div className="social"><FaLinkedin /></div></Link>
+                                          <Link href={'https://www.linkedin.com/in/babish-chaudhary-a19369274/'} target="_blank" rel="noopener noreferrer"><div className="social"><FaLinkedin /></div></Link>
 
                                     </div>
                               </div>

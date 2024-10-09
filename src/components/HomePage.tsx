@@ -53,9 +53,9 @@ const HomePage = () => {
                         <p className='text-center opacity-0 w-full max-w-[850px] text-xl'>I'm a passionate <span className='text-cyan-400'>web developer</span> from Nepal, skilled in both front-end and back-end technologies, dedicated to crafting seamless and dynamic digital experiences that reflect my commitment to innovation and excellence.</p>
                         <p className='opacity-0'>Here's a bit more <span className='text-cyan-400 text-lg'>about me</span></p>
                         <div className="sociallinks  flex justify-center items-center gap-3">
-                              <Link href={'https://facebook.com/babish9887'}><div className="social"><FaFacebookF /></div></Link>
-                              <Link href={'https://github.com/babish9887'}><div className="social"><FiGithub /></div></Link>
-                              <Link href={'https://www.linkedin.com/in/babish-chaudhary-a19369274/'}><div className="social"><FaLinkedinIn /></div></Link>
+                              <Link href={'https://facebook.com/babish9887'} target="_blank" rel="noopener noreferrer"><div className="social"><FaFacebookF /></div></Link>
+                              <Link href={'https://github.com/babish9887'} target="_blank" rel="noopener noreferrer"><div className="social"><FiGithub /></div></Link>
+                              <Link href={'https://www.linkedin.com/in/babish-chaudhary-a19369274/'} target="_blank" rel="noopener noreferrer"><div className="social"><FaLinkedinIn /></div></Link>
                         </div>
                   </div>
             </div>

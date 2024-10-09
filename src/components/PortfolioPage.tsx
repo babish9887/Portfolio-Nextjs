@@ -73,17 +73,6 @@ const PortfolioPage = () => {
                   opacity: 1,
                   y: 0,
             },"-=0.3")
-
-
-            // tl2.fromTo('.l1left, .l1right, .l2left, .l2right, .l3left, .l3right', {
-            //       y: 100,
-            //       opacity: 0,
-            //       duration: 2,
-            // }, {
-            //       opacity: 1,
-            //       y: 0,
-            //       stagger:0.5
-            // })
       }, [])
 
       return (
@@ -97,11 +86,11 @@ const PortfolioPage = () => {
                                     <div className={`${portfolioDiv}`}>
                                     <Image src={project.imageUrl} width={1000} height={1000} alt='portfolio' className='object-cover  w-full' />
                                     <div className='btnDiv '>
-                                          <Link href={project.githubUrl}>
+                                          <Link href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                                                 <button className={`${buttonStyle}`}><HiOutlineCode /></button>
                                           </Link>
 
-                                          <Link href={project.hostingUrl}>
+                                          <Link href={project.hostingUrl} target="_blank" rel="noopener noreferrer">
                                                 <button className={`${buttonStyle}`}><HiOutlineEye /></button>
                                           </Link>
 
@@ -114,9 +103,7 @@ const PortfolioPage = () => {
                               </div>
                               ))}
                         </div>
-
                   </div>
-
             </div>
       )
 }

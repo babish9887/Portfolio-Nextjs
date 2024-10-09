@@ -103,7 +103,7 @@ const AboutPage = () => {
                               <div className="div w-full md:w-1/2 px-5 min-h-[200px] flex flex-col justify-center items-center sm:items-start gap-y-8">
                                     {/* <h1 className='text-5xl line leading-tight font-bold text-center sm:text-left'> <span className='text-cyan-400'>Web Developer</span>, Creative Thinker & Tech enthusiast</h1> */}
                                     <AnimatedText text='Web Developer, Creative Thinker & Tech Enthusiast' />
-                                    <Link href='https://drive.google.com/file/d/1i5C0v6WzpTVtAPBdrlzeR32_9YzmBmfU/view?usp=sharing'><button className='download flex justify-center items-center gap-x-2 bg-cyan-500 hover:bg-cyan-600 px-3 py-2 rounded-lg transition-all ease-linear'>Downlaod CV <MdOutlineFileDownload className='text-2xl' /></button></Link>
+                                    <Link href='https://drive.google.com/file/d/1i5C0v6WzpTVtAPBdrlzeR32_9YzmBmfU/view?usp=sharing' target="_blank" rel="noopener noreferrer"><button className='download flex justify-center items-center gap-x-2 bg-cyan-500 hover:bg-cyan-600 px-3 py-2 rounded-lg transition-all ease-linear'>Downlaod CV <MdOutlineFileDownload className='text-2xl' /></button></Link>
                               </div>
                               <div className="brief  w-full md:w-[50%] text-xl p-5 text-center sm:text-left">
 
