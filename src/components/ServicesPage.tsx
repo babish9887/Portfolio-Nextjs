@@ -83,7 +83,7 @@ const ServicesPage = () => {
                               <div className='service line1-left group opacity-0'>
                                     <div className={`${cardBlackStyle}`}>
                                           <FaCode className='text-5xl' />
-                                          <div className="overlay absolute top-0 left-0 bg-transparent w-full h-full border-2 border-dashed border-white rounded-full transition-all group-hover:rotate-[360deg] ease-out duration-500">
+                                          <div className="overlay absolute top-0 left-0 bg-transparent w-full h-full border-2 border-dashed border-white rounded-full transition-all group-hover:rotate-[180deg] ease-out duration-500">
                                           </div>
                                     </div>
 
@@ -96,7 +96,7 @@ const ServicesPage = () => {
                               <div className="service-oppose line1-right group opacity-0">
                                     <div className={`${cardCyanStyle}`}>
                                           <MdDesignServices className='text-5xl text-black' />
-                                          <div className="overlay absolute top-0 left-0 bg-transparent w-full h-full border-2 border-dashed border-black rounded-full transition-all group-hover:rotate-[-360deg] ease-out duration-500 ">
+                                          <div className="overlay absolute top-0 left-0 bg-transparent w-full h-full border-2 border-dashed border-black rounded-full transition-all group-hover:rotate-[-180deg] ease-out duration-500 ">
 
                                           </div>
                                     </div>
@@ -110,7 +110,7 @@ const ServicesPage = () => {
                               <div className="service-oppose line2-left group opacity-0">
                                     <div className={`${cardCyanStyle}`}>
                                           <MdDevices className='text-5xl text-black' />
-                                          <div className="overlay absolute top-0 left-0 bg-transparent w-full h-full border-2 border-dashed border-black rounded-full transition-all group-hover:rotate-[-360deg] ease-out duration-500">
+                                          <div className="overlay absolute top-0 left-0 bg-transparent w-full h-full border-2 border-dashed border-black rounded-full transition-all group-hover:rotate-[-180deg] ease-out duration-500">
 
                                           </div>
                                     </div>
@@ -124,7 +124,7 @@ const ServicesPage = () => {
                               <div className="service line2-right group opacity-0">
                                     <div className={`${cardBlackStyle}`}>
                                           <GiAutoRepair className='text-5xl' />
-                                          <div className="overlay absolute top-0 left-0 bg-transparent w-full h-full border-2 border-dashed border-white rounded-full transition-all group-hover:rotate-[360deg] ease-out duration-500">
+                                          <div className="overlay absolute top-0 left-0 bg-transparent w-full h-full border-2 border-dashed border-white rounded-full transition-all group-hover:rotate-[180deg] ease-out duration-500">
 
                                           </div>
                                     </div>
