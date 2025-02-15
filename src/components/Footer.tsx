@@ -9,7 +9,7 @@ const Footer = () => {
                   <p>babishchaudhary.dev@gmail.com</p>
                   </a>
                   <div className='h-[1px] w-full bg-slate-700 mt-4 '/>
-            <h1 className='text-gray-300'>Copyright © 2024 Babish Chaudhary . All Rights Reserved.</h1>
+            <h1 className='text-gray-300'>Copyright © {new Date().getFullYear()} Babish Chaudhary . All Rights Reserved.</h1>
             </div>
     </div>
   )

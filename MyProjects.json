@@ -1,10 +1,18 @@
 [
+    {
+        "name": "Food Mate",
+        "githubUrl": "https://github.com/babish9887/FoodMate-V1",
+        "hostingUrl": "https://food-mate-v1.vercel.app/",
+        "imageUrl": "/foodmate.png",
+        "position": "l1left",
+        "description": "A React-based online ordering platform for seamless food ordering and management."
+    },
       {
           "name": "Tourease",
           "githubUrl": "https://github.com/babish9887/Tour-Ease-Nextjs",
           "hostingUrl": "https://tourease-babish9887.vercel.app/",
           "imageUrl": "/tourease.png",
-          "position": "l1left",
+          "position": "l1right",
           "description": "A Next.js application for planning and organizing tours."
       },
       {
@@ -12,7 +20,7 @@
           "githubUrl": "https://github.com/babish9887/ChatGPT-Clone",
           "hostingUrl": "https://chat-gpt-babish9887.vercel.app/",
           "imageUrl": "/chatGPT.png",
-          "position": "l1right",
+          "position": "l2left",
           "description": "A Next.js clone of ChatGPT for conversational AI."
       },
       {
@@ -20,17 +28,10 @@
           "githubUrl": "https://github.com/babish9887/Spotify-clone",
           "hostingUrl": "https://spotify-clone-babish9887.vercel.app/",
           "imageUrl": "/spotify-clone.png",
-          "position": "l2left",
+          "position": "l2right",
           "description": "A Next.js application mimicking Spotify's music streaming features."
       },
-      {
-          "name": "The Wild Oasis",
-          "githubUrl": "https://github.com/babish9887/the-wild-oasis",
-          "hostingUrl": "https://the-wild-oasis-babish9887.vercel.app/",
-          "imageUrl": "/thewilsoasis.png",
-          "position": "l2right",
-          "description": "A React-based application for exploring wild nature adventures."
-      },
+    
       {
           "name": "Digital Oasis",
           "githubUrl": "https://github.com/babish9887/e-commerce-v3",
