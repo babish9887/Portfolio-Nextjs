@@ -3,7 +3,7 @@
         "name": "Food Mate",
         "githubUrl": "https://github.com/babish9887/FoodMate-V1",
         "hostingUrl": "https://food-mate-v1.vercel.app/",
-        "imageUrl": "/foodmate.png",
+        "imageUrl": "/foodmate2.png",
         "position": "l1left",
         "description": "A React-based online ordering platform for seamless food ordering and management."
     },
