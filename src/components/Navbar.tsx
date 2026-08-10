@@ -84,24 +84,24 @@ const Navbar = () => {
                 tl2.reverse(); 
             }
         }
-        const[cs, setCs]=useState('home')
-        useEffect(() => {
-            const handleScroll = () => {
-              const sections = document.querySelectorAll('.section');
-              sections.forEach((section) => {
-                  //@ts-ignore
-                  const sectionTop = section.offsetTop;
-                if (window.scrollY >= (sectionTop-(window.innerHeight/2.5))) { 
-                  setCs(section.id)
-                }
-              });
-        
-            };
-            window.addEventListener('scroll', handleScroll);
-            return () => {
-              window.removeEventListener('scroll', handleScroll);
-            };
-          }, []); 
+            const[cs, setCs]=useState('home')
+            useEffect(() => {
+                  const handleScroll = () => {
+                  const sections = document.querySelectorAll('.section');
+                  sections.forEach((section) => {
+                        //@ts-ignore
+                        const sectionTop = section.offsetTop;
+                  if (window.scrollY >= (sectionTop-(window.innerHeight/2.5))) { 
+                        setCs(section.id)
+                  }
+                  });
+            
+                  };
+                  window.addEventListener('scroll', handleScroll);
+                  return () => {
+                  window.removeEventListener('scroll', handleScroll);
+                  };
+            }, []); 
       return (
             <>
                   <div className='nav z-10 w-full p-6 sm:p-0 flex h-[5rem] shadow-lg bg-black/20 backdrop-blur-md justify-between sm:justify-around items-center fixed top-0'>

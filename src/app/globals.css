@@ -35,18 +35,13 @@
     
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  color-scheme: dark;
 }
 
 html,body {
+  color-scheme: dark;
   color: var(--foreground);
   background: var(--background);
   font-family:'Myfont','Myfon1','Myfont2',"Myfont3","Myfont4","Myfont5", sans-serif;
